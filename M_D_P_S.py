@@ -12,15 +12,12 @@ Created on Mon Dec 18 18:44:01 2023
 @author: DELL
 """
 
-import pandas as pd 
-import numpy as np 
 import pickle
-from streamlit_option_menu import option_menu
 import streamlit as st
+from streamlit_option_menu import option_menu
+Diabate_model = pickle.load(open("Dibetic_model.sav", 'rb'))
 
-Diabate_model = pickle.load(open("C:/Users/DELL/Downloads/Diabate_data-set/Multiple_Disease_Prediction/Dibetic_model.sav", 'rb'))
-
-heart_disease_model= pickle.load(open("C:/Users/DELL/Downloads/Diabate_data-set/Multiple_Disease_Prediction/heart_Disease.sav", 'rb'))
+heart_disease_model= pickle.load(open("heart_Disease.sav", 'rb'))
 
 
 #sidebar
